@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Product Name — Coming Soon</title>
+<meta name="description" content="One sentence about your value." />
+<body style="margin:0;font:16px/1.5 system-ui;padding:40px;display:grid;place-items:center;min-height:100vh;background:#f8fafc">
+  <main style="max-width:720px;background:#fff;border:1px solid #eaeaea;border-radius:14px;padding:32px;box-shadow:0 10px 30px rgba(0,0,0,.05)">
+    <small style="background:#eef2ff;color:#3730a3;border:1px solid #e0e7ff;padding:6px 10px;border-radius:999px">Launching soon</small>
+    <h1 style="margin:12px 0 8px">A clear, punchy headline</h1>
+    <p style="margin:0 0 16px;color:#444">Say who it’s for and why it matters.</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:flex;gap:8px;flex-wrap:wrap">
+      <input type="email" name="email" placeholder="Enter your email" required style="flex:1 1 260px;padding:12px;border:1px solid #ddd;border-radius:10px" />
+      <button type="submit" style="padding:12px 16px;border:0;border-radius:10px;background:#111;color:#fff;font-weight:600">Join waitlist</button>
+    </form>
+    <p style="color:#666;font-size:12px;margin:10px 0 0">No spam. Unsubscribe anytime.</p>
+    <p style="color:#666;font-size:14px;margin:22px 0 0">© <span id="y"></span> Your Company</p>
+  </main>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
