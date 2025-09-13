@@ -10,7 +10,7 @@ body{
   min-height:100vh;
   background:var(--bg);
   color:var(--ink);
-  font-family:Inter, system-ui, -apple-system, sans-serif;
+  font-family:Inter, system-ui, sans-serif;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
@@ -27,12 +27,12 @@ main.center{
 }
 
 .emoji{
-  font-size: clamp(4rem, 10vw, 6rem); /* large emoji, scales with screen */
+  font-size: clamp(4rem, 10vw, 6rem); /* large can emoji */
   margin-bottom: 1rem;
 }
 
 h1{
-  font-family:"Playfair Display", serif;
+  font-family:"Lexend", sans-serif;
   font-size: clamp(2.5rem, 6vw, 4rem);
   margin:.5rem 0;
   font-weight:700;
@@ -47,10 +47,18 @@ h2{
 
 .tagline{
   font-size:1rem;
-  margin-bottom:2rem;
+  margin-bottom:1rem;
   color:var(--accent);
   font-weight:500;
   text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.coming{
+  font-size:1.2rem;
+  color:var(--muted);
+  margin-bottom:2rem;
+  font-style:italic;
   letter-spacing:1px;
 }
 
