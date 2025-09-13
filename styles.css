@@ -1,29 +1,77 @@
-:root{ --bg:#0d0d0d; --ink:#f5f5f5; --muted:#aaaaaa; --accent:#c7a97a; }
+:root{
+  --bg:#0d0d0d;
+  --ink:#f5f5f5;
+  --muted:#aaaaaa;
+  --accent:#c7a97a; /* champagne gold */
+}
 
 body{
-  margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+  margin:0;
+  min-height:100vh;
+  background:var(--bg);
+  color:var(--ink);
   font-family:Inter, system-ui, -apple-system, sans-serif;
-  display:flex; flex-direction:column; justify-content:space-between;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 main.center{
-  flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center;
-  text-align:center; padding:2rem;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:2rem;
 }
 
-h1{ font-family:"Playfair Display", serif; font-size:clamp(2rem,6vw,3.5rem); margin:.5rem 0; }
-h2{ font-weight:400; margin:.25rem 0 1rem 0; color:var(--muted); }
-.tagline{ font-size:1rem; margin-bottom:2rem; color:var(--accent); }
+.emoji{
+  font-size: clamp(4rem, 10vw, 6rem); /* large emoji, scales with screen */
+  margin-bottom: 1rem;
+}
+
+h1{
+  font-family:"Playfair Display", serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin:.5rem 0;
+  font-weight:700;
+}
+
+h2{
+  font-family:Inter, sans-serif;
+  font-weight:300;
+  margin:0.25rem 0 1rem 0;
+  color:var(--muted);
+}
+
+.tagline{
+  font-size:1rem;
+  margin-bottom:2rem;
+  color:var(--accent);
+  font-weight:500;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
 
 .btn{
-  display:inline-block; padding:.8rem 1.6rem; border:1px solid var(--accent);
-  border-radius:6px; text-decoration:none; color:var(--accent); font-weight:500;
+  display:inline-block;
+  padding:.9rem 1.8rem;
+  border:1px solid var(--accent);
+  border-radius:6px;
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:500;
   transition:background .2s, color .2s;
 }
-.btn:hover{ background:var(--accent); color:var(--bg); }
+.btn:hover{
+  background:var(--accent);
+  color:var(--bg);
+}
 
-footer{ text-align:center; padding:1rem; font-size:.8rem; color:var(--muted); }
-.emoji {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+footer{
+  text-align:center;
+  padding:1rem;
+  font-size:.8rem;
+  color:var(--muted);
 }
