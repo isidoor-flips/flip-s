@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Welcome!</title>
-    <style>
-      body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-      h1 { font-size: 3em; }
-      p { font-size: 1.2em; color: #555; }
-      a.button {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        border: 1px solid #000;
-        border-radius: 5px;
-        text-decoration: none;
-        color: #000;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>FLIP'S CARE - Coming soon 👋</h1>
-    <p>This is my very first landing page on GitHub Pages.</p>
-    <a class="button" href="mailto:hello@flipscare.com">Contact Me</a>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FLIP’S — It’s Flippin Simple</title>
+  <meta name="description" content="Sydney-based personal care. Simple. Refillable. Aluminium-first." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="center">
+    <h1>It’s Flippin Simple.</h1>
+    <h2>Personal care — refilled in aluminium.</h2>
+    <p class="tagline">Born in Sydney. Designed to last.</p>
+    <div class="cta">
+      <a href="mailto:hello@flipscare.com" class="btn">Say hello</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> FLIP’S</p>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
 </html>
